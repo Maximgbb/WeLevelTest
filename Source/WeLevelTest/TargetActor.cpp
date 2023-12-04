@@ -29,6 +29,6 @@ void ATargetActor::OnRep_OnValueChange()
 {
 	if (OnBooleanValueChange.IsBound())
 	{
-		OnBooleanValueChange.Broadcast(bBooleanValue);
+		OnBooleanValueChange.Execute(bBooleanValue);
 	}
 }

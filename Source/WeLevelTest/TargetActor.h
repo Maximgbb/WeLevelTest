@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "TargetActor.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBooleanValueChange, bool, NewValue);
+DECLARE_DELEGATE_OneParam(FBooleanValueChange, bool);
 
 UCLASS()
 class WELEVELTEST_API ATargetActor : public AActor

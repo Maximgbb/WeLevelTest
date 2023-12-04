@@ -16,7 +16,7 @@ UWaitForBooleanChange* UWaitForBooleanChange::WaitForBooleanChange(UObject* InWo
 
 void UWaitForBooleanChange::Activate()
 {
-	TargetActor->OnBooleanValueChange.AddUniqueDynamic(this, &UWaitForBooleanChange::OnTargetBooleanValueChanged);
+	TargetActor->OnBooleanValueChange.BindUObject(this, &UWaitForBooleanChange::OnTargetBooleanValueChanged);
 }
 
 void UWaitForBooleanChange::OnTargetBooleanValueChanged(bool bNewValue)

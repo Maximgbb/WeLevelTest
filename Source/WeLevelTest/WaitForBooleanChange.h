@@ -29,7 +29,6 @@ public:
 
 protected:
 
-	UFUNCTION()
 	void OnTargetBooleanValueChanged(bool bNewValue);
 
 private:
